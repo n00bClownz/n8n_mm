@@ -51,5 +51,5 @@ jobs:
           provenance: false
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/base:${{ github.event.inputs.node_version }}
-            ghcr.io/${{ github.repository_owner }}/base:${{ github.event.inputs.node_version }}
+          ${{ secrets.DOCKER_USERNAME }}/base:${{ github.event.inputs.node_version }}
+          ghcr.io/${{ github.repository_owner.toLowerCase() }}/base:${{ github.event.inputs.node_version }}
